@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume-skill-analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>RESUME/SKILL ANALYZER</header>
+  <main>
+    <section class="job-role">
+      <label for="role">choose job role</label>
+      <select id="role">
+        <option value="">--select a role--</option>
+      </select>
+    </section>
+
+    <section>
+      <label for="resume">Paste your resume/portfolio text:</label>
+      <textarea id="resume" placeholder="paste here..." rows="10" cols="50"></textarea>
+    </section>
+
+    <section class="analysis-output">
+      <h2>KEYWORD ANALYSIS</h2>
+
+      <div id="found-keywords">
+        <h3>✅ Found</h3>
+        <ul></ul>
+      </div>
+
+      <div id="missing-keywords">
+        <h3>❌ Missing</h3>
+        <ul></ul>
+      </div>
+    </section>
+
+    <script src="roles.js" defer></script>
+    <script src="script.js" defer></script>
+  </main>
+  <footer>Made with ❤️ by Navya bharathi</footer>
+</body>
+</html>

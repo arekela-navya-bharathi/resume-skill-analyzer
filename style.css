@@ -1,0 +1,141 @@
+*
+{
+    margin :0;
+    padding:0;
+    box-sizing :border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+
+    background-color: #E0F2FE;
+    color :#333333;
+    padding:20px;
+}
+
+header{
+
+    background-color: #7B2CBF;
+    color:white;
+    text-align :center;
+    padding :1rem;
+    font-size:1.5rem;
+    border-radius: 12px;
+    margin-bottom:20px;
+}
+
+footer{
+    background-color: #7B2CBF;
+    color:white;
+    text-align:center;
+    padding:1rem;
+    font-size:1rem;
+    border-radius :12px;
+    margin-top:30px;
+
+}
+
+
+main{
+    max-width:900px;
+    margin:auto;
+    background-color: white;
+    border-radius: 16px;
+    padding:20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+
+section{
+    margin-bottom:25px;
+}
+
+.job-role label 
+{
+    font-weight:600;
+    font-size:1.1rem;
+}
+#role
+{
+    padding:10px;
+    font-size:1rem;
+    margin-top :10px;
+    width :100%;
+    border-radius :8px;
+    background-color : #f4f0ff;
+}
+.resume-input label{
+    font-weight:600;
+    font-size:1.1rem;
+    
+}
+#resume
+{
+    width:100%;
+    min-height:200px;
+    margin-top:10px;
+    padding:15px;
+    border :2px solid #FFB703;
+    border-radius: 12px;
+    background-color: #ffffff;
+    font-size :1rem;
+    resize:vertical;
+}
+
+label[for="resume"] {
+  color: rgb(41, 41, 179);
+  font-weight: bold;
+}
+
+
+.analysis-output h2
+{
+    margin-bottom:10px;
+    color:#7B2CBF;
+}
+
+.analysis-output h3{
+
+    margin :10px 0 5px;
+}
+
+#found-keywords ul,
+#missing-keywords ul{
+
+    list-style:none;
+    padding-left:0;
+    display :flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+#found-keywords li{
+    background-color: #38B000;
+    color :white;
+    padding : 8px 12px;
+    border-radius :20px;
+}
+ 
+#missing-keywords li{
+    background-color: #E63946;
+    color:white;
+    padding :8px 12px;
+    border-radius:20px;
+}
+
+@media(max-width:600px)
+{
+    header, footer 
+    {
+        font-size:1.2rem;
+    }
+    main
+    {
+        padding :15px;
+    }
+
+    #resume
+    {
+        font-size :0.95rem;
+    }
+}
